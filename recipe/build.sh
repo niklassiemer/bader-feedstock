@@ -4,11 +4,7 @@ if test -f makefile.lnx_ifort; then
     mv makefile.lnx_ifort makefile
 fi
 
-# Validate folder structure 
-ls
-cat makefile
-
-# Compile 
+# Compile bader and install it  
 make bader
 mkdir -p ${PREFIX}/bin
 cp bader ${PREFIX}/bin/bader
